@@ -1,1 +1,1 @@
-
+# cmake expect error C2280 in test.cpp(6) - an attempt was made to link to a remote function (ru: предпринята попытка ссылки на удаленную функцию)

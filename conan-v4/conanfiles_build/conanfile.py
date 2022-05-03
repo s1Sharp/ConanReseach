@@ -6,6 +6,13 @@ class Quaternion(ConanFile):
     # version - get while build
     settings = "os", "compiler", "build_type", "arch"
     exports_sources = "*.patch"
+    options = {
+        "shared": [True, False]
+    }
+    default_options = {
+        "shared": True
+    }
+
 
     def source(self):
         print("clone")
@@ -33,6 +40,9 @@ class Quaternion(ConanFile):
         print("build")
         src_dir = os.path.join(self.source_folder, "src")
         cmake = CMake(self)
+
+        if self.options["shared"]:
+            cmake.definitions["BUILD_SHARED_LIBS"] = "ON"
 
         cmake.configure(source_folder=src_dir)
         cmake.build()

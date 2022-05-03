@@ -10,7 +10,7 @@ class Quaternion(ConanFile):
         print("clone")
         src_dir = os.path.join(self.source_folder, "src")
         git = tools.Git(src_dir)
-        git.clone("https://github.com/alexsharamet/EasyQuaternion.git")
+        git.clone("https://github.com/s1Sharp/EasyQuaternion.git")
 
         print("checkout")
         commit = self.conan_data["versions"][self.version]

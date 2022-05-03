@@ -9,4 +9,4 @@ conan_deps: conan_install quaternion
 conan_install: 
 	pip install conan
 quaternion:
-	conan create ./conanfiles_build Quaternion/1.0@fix/fix
+	conan create ./conanfiles_build Quaternion/1.0@pr/pr -pr win
