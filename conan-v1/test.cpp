@@ -6,7 +6,7 @@ int main()
     Quaternion x;
     Quaternion(1,2,3,4);
     printf("hello");
-    int a;
-    scanf("%d",&a);
+    char a;
+    scanf("%s",&a);
     return 0;
 }
