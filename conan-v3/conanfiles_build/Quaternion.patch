@@ -1,0 +1,13 @@
+diff --git a/Quaternion/Quaternion.h b/Quaternion/Quaternion.h
+index c66a02d..069dbd6 100644
+--- a/Quaternion/Quaternion.h
++++ b/Quaternion/Quaternion.h
+@@ -5,7 +5,7 @@ constexpr double Accuracy = 1e-5;
+ class Quaternion
+ {
+ public:
+-    Quaternion() = default;
++    Quaternion() = delete;
+     Quaternion(double w, double x, double y, double z);
+ 
+     Quaternion(const Quaternion&) = default;
